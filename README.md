@@ -1,4 +1,9 @@
 # 🔮 Mystic Cards - Loja de Cartas Místicas
+![Status](https://img.shields.io/badge/status-concluído-brightgreen)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
 
 **Mystic Cards** é uma loja online fictícia de cartas mágicas e personagens sombrios, desenvolvida como um projeto web utilizando **HTML, CSS e JavaScript puro**.
 
