@@ -1,0 +1,214 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #0a0a23;
+    color: #c5c5e2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container .produtos {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-shadow: none; /* remove neon nas letras */
+    color: #c5c5e2;
+}
+
+.container .filtros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.container .categorias-cartas,
+.container .preco-cartas {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container label {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #00c2cb;
+    text-shadow: none; /* remove neon */
+}
+
+.container .categorias-cartas select,
+.container .preco-cartas input {
+    padding: 16px 13px;
+    border-radius: 2px;
+    border: 2px solid #6528D3;
+    background-color: #1b163c;
+    color: #c5c5e2;
+    height: 52px;
+}
+
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container input:focus-visible {
+    outline: none;
+    border-color: #9b63ff;
+    box-shadow: 0 0 8px #9b63ffaa;
+}
+
+.container select.categoria {
+    appearance: none;
+    background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+}
+
+.container .filtros .btn-filtrar {
+    border: none;
+    background-color: #6528d3;
+    color: #ededed;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow:
+        0 0 8px #b878ff,
+        0 0 16px #a16df5;
+}
+
+.container .filtros .btn-filtrar:hover {
+    background-color: #33008f;
+    box-shadow:
+        0 0 12px #d9a6ff,
+        0 0 24px #d9a6ff;
+}
+
+.container .cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+    justify-content: center; /* centraliza as cartas */
+    align-items: stretch; /* força alinhamento vertical igual */
+}
+
+.container .cartas .carta {
+    flex: 1 1 300px; /* largura mínima 300px, cresce conforme espaço */
+    max-width: 300px;
+    background-color: #1b163c;
+    color: #c5c5e2;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 15px 2px #4e3dff88; /* neon azul nas bordas */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .cartas .carta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px 4px #a085ffcc; /* neon roxo mais forte */
+    border-color: #9b63ff;
+}
+
+.container .carta img {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #4e3dff88;
+    flex-shrink: 0; /* impede que a imagem encolha */
+}
+
+.container .carta .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #2b2651;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-grow: 1; /* faz essa área crescer e igualar a altura */
+}
+
+.container .informacoes .nome-personagem {
+    font-size: 24px;
+    font-weight: 700;
+    color: #c5c5e2;
+    text-shadow: none;
+    margin: 0;
+}
+
+.container .carta .informacoes .categoria {
+    color: #8a83bf;
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.container .carta .informacoes .preco {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #85c3a3;
+    text-shadow: none;
+}
+
+.container .carta .informacoes .btn-comprar {
+    color: #ededed;
+    background-color: #6528d3;
+    padding: 14px 0;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    user-select: none;
+    box-shadow:
+        0 0 8px #b878ff,
+        0 0 16px #a16df5;
+    margin-top: auto; /* empurra botão pra baixo sempre */
+}
+
+.container .carta .informacoes .btn-comprar:hover {
+    background-color: #33008f;
+    box-shadow:
+        0 0 12px #d9a6ff,
+        0 0 24px #d9a6ff;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #6528d3;
+    color: #ededed;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magick_IA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+ <header>
+  <div class="logo">🔮 Mystic Cards</div>
+</header>
+
+    <main class="container">
+        <h1 class="produtos">Produtos</h1>
+        <div class="filtros">
+            <div class="categorias-cartas">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Selecione uma carta</option>
+                    <option value="Comum">Comum</option>
+                    <option value="Rara">Rara</option>
+                    <option value="Épica">Épica</option>
+                </select>
+            </div>
+            <div class="preco-cartas">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex: 100">
+            </div>
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
+        <ul class="cartas">
+            <li class="carta" data-categoria="Épica" data-preco="3000">
+                <img src="./src/imagem/KUROJIN.PNG.png" alt="Carta Kurojin">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Kurojin</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 3.000,00</span>
+                    <p class="descricao">Um guerreiro ancestral envolto em mistério e poder oculto.</p>
+                    <a href="http://wa.me/31996027645?text=Olá, quero comprar a carta Kurojin!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Épica" data-preco="4000">
+                <img src="./src/imagem/NYX.png.png" alt="Carta Nyx">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Nyx, A Sombria Guardiã</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 4.000,00</span>
+                    <p class="descricao">Manipulação das Sombras — pode controlar as sombras para se esconder, atacar ou
+                        criar ilusões sombrias.<br><em>“Na escuridão, eu sou o silêncio que devora a luz.”</em></p>
+                    <a href="http://wa.me/31996027645?text=Olá, quero comprar a carta Nyx!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="Comum" data-preco="800">
+                <img src="./src/imagem/KAEL.png.png" alt="Carta Kael">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Kael, O Caçador Noturno</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 800,00</span>
+                    <p class="descricao">Sentidos Aguçados — enxerga na penumbra e detecta presas mesmo nas sombras mais
+                        densas.<br><em>“Meu olhar é o último que verá sua queda.”</em></p>
+                    <a href="http://wa.me/31996027645?text=Olá, quero comprar a carta Kael!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="Rara" data-preco="1500">
+                <img src="./src/imagem/SELENE.png.png" alt="Carta Selene">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Selene, A Tece-Ventos</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 1.500,00</span>
+                    <p class="descricao">Controla ventos gélidos que congelam a alma e desorientam os
+                        adversários.<br><em>“O frio da noite é meu abraço fatal.”</em></p>
+                    <a href="http://wa.me/31996027645?text=Olá, quero comprar a carta Selene!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="Comum" data-preco="600">
+                <img src="./src/imagem/DRAX.png" alt="Carta Drax">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Drax, O Senhor das Cinzas</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 600,00</span>
+                    <p class="descricao">Pode transformar tudo ao redor em cinzas e controlar a fumaça para criar
+                        barreiras ou atacar.<br><em>“Das cinzas nasce o terror.”</em></p>
+                    <a href="http://wa.me/31996027645?text=Olá, quero comprar a carta Drax!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="Comum" data-preco="400">
+                <img src="./src/imagem/LYSARA.png" alt="Carta Lyra">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Lyra, A Sirene Sombria</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 400,00</span>
+                    <p class="descricao">Seu canto hipnótico manipula emoções e atrai os inimigos para a
+                        perdição.<br><em>“Ouça meu canto... e encontre seu fim.”</em></p>
+                    <a href="http://wa.me/31996027645?text=Olá, quero comprar a carta Lyra!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+        </ul>
+
+        </ul>
+    </main>
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
